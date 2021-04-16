@@ -11,6 +11,7 @@ __1. Используйте пробелы, а не табы.__
 let showName = () => {
 ••••let = name;
 }
+
 // Хорошо
 let showName = () => {
 ••let = name;
@@ -24,9 +25,11 @@ __2. Обязательно ставь точку с запятой.__
 let luke = {}
 let leia = {}
 [luke, leia].forEach(jedi => jedi.father = 'vader')
+
 // Хорошо
 let luke = {};
 let leia = {};
+
 [luke, leia].forEach((jedi) => {
   jedi.father = 'vader';
 });
@@ -37,6 +40,7 @@ __3. Используй let и const вместо var.__
 ```
 // Плохо
 var example = 42;
+
 // Хорошо
 let example = 42;
 ```
@@ -49,6 +53,7 @@ __4. Стрелочные функции предпочтительны.__
   const y = x + 1;
   return x * y;
 });
+
 // Хорошо
 [1, 2, 3].map((x) => {
   const y = x + 1;
@@ -61,6 +66,7 @@ __5. Объявляйте переменные по одной.__
 ```
 // Плохо
 let a = 1, b = 2, c = 3;
+
 // Хорошо
 let a = 1;
 let b = 2;
@@ -72,10 +78,13 @@ __6. Используйте одинарные, а не двойные кавы�
 ```
 // Плохо
 let directive = "No identification of self or mission."
+
 // Плохо
 let saying = 'Say it ain\u0027t so.';
+
 // Хорошо
 let directive = 'No identification of self or mission.';
+
 // Хорошо
 let saying = `Say it ain't so`;
 ```
@@ -86,6 +95,7 @@ __7. Для создания объектов и массивов использ
 // Плохо
 let items = new Array();
 let items = new Object();
+
 // хорошо
 let items = [];
 let items = {};
@@ -104,6 +114,7 @@ let switch = 89;
 let age = () => {
   //тело функции
 }
+
 //Хорошо
 let age = 25;
 let showAge = () => {
@@ -120,6 +131,7 @@ let edit = (name, age) => {
     // тело цикла
   }
 }
+
 //Плохо
 let edit = (name, age) =>
 {
@@ -136,9 +148,11 @@ let secondNumber = 3;
 let showSum = (num1, num2) => {
   //тело функции
 }
+
 //Хорошо
 let firstNumber = 2;
 let secondNumber = 3;
+
 let showSum = (num1, num2) => {
   //тело функции
 }
